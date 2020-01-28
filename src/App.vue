@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>CusMo 1</h1>
+    <h1>CusMo 2</h1>
   </div>
 </template>
 
