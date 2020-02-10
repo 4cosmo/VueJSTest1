@@ -8,12 +8,8 @@
     <button v-on:click= "clickMe1"> Click1 </button>
     <button v-on:click= "clickMe2('Hello')"> Click2 </button>
 
-    <h5>
-      <span v-if="boolLogin === true">Username is : {{username}} </span>
-    </h5>
-    <h5>
-      <span v-if="boolLogin === true">Password is : {{password}}</span>
-    </h5>
+    <div :style="ActivateClick ? sad4 : ' '"> สวัสดีผมโฟกัสนะ </div>
+    <button @click="ActivateClick = !ActivateClick">ActivateClick</button>
 
   </div>
 </template>
@@ -29,7 +25,12 @@ export default {
     data() {
         return {
             count: 0,
-            boolLogin: false
+            boolLogin: false,
+            sad4: {
+                backgroundColor : "black",
+                color : "red"
+            },
+            ActivateClick : false
         }
     },
 

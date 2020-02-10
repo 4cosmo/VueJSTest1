@@ -14,7 +14,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+
   p{
     font: 20px TH Sarabun New;
   }
